@@ -1,0 +1,75 @@
+.header {
+  border-bottom: 1px solid $color-border-primary;
+  font-size: $font-size-subtitle;
+  font-weight: $font-weight-medium;
+  line-height: $line-height-normal;
+  letter-spacing: $letter-spacing-compact;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+  &__sub-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__nav-block {
+    margin-left: 93px;
+  }
+  &__nav-list {
+    list-style: none;
+    display: flex;
+  }
+  &__contact-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  &__link {
+    text-decoration: none;
+    color: inherit;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__link:hover,
+  &__link:focus {
+    color: $color-selection;
+    cursor: pointer;
+  }
+  &__link--nav {
+    margin-right: 46px;
+    position: relative;
+  }
+  &__link--current::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -33px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $color-selection;
+    cursor: auto;
+  }
+  &__link--contact {
+    color: $color-text-tertiary;
+  }
+  &__icon {
+    fill: currentColor;
+    margin-right: 6px;
+  }
+  &__icon--envelope {
+    vertical-align: middle;
+  }
+  &__icon--smartphone {
+    vertical-align: text-top;
+    margin-left: 50px;
+  }
+  &__contact {
+    display: inline-block;
+  }
+}

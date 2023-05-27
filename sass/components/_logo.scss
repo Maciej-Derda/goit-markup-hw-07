@@ -1,0 +1,16 @@
+.logo {
+  font-family: Raleway;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-logo;
+  line-height: $line-height-normal;
+  letter-spacing: $letter-spacing-normal;
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  &__web {
+    color: $color-selection;
+  }
+  &--header {
+    color: $color-text-quaternary;
+  }
+}
